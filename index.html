@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Avec - La Tontine Digitale Moderne</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <nav>
+          <a href="#" class="logo">E-Avec</a>
+          <div class="menu-toggle" id="mobile-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <ul class="nav-links" id="nav-links">
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#features">Fonctionnalités</a></li>
+            <li><a href="#how-it-works">Comment ça marche</a></li>
+            <li><a href="#testimonials">Témoignages</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#" class="btn open-signup">Télécharger l'App</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="accueil">
+      <div class="container">
+        <!-- Image déplacée en haut pour faciliter le positionnement absolu -->
+        <div class="hero-image">
+          <img src="assets/logo.png" alt="Interface E-Avec" class="main-img" />
+        </div>
+
+        <div class="hero-content">
+          <h1>Révolutionnez la Gestion de Vos Tontines en Afrique</h1>
+          <p>
+            La première plateforme complète qui digitalise les tontines
+            traditionnelles avec transparence, sécurité et accessibilité pour
+            tous, avec ou sans smartphone.
+          </p>
+          <div class="hero-buttons">
+            <a href="#" class="btn open-signup">Commencer gratuitement</a>
+            <a href="#how-it-works" class="btn btn-outline"
+              >Voir la démo vidéo</a
+            >
+          </div>
+          <div class="hero-badges">
+            <span><i class="fas fa-shield-alt"></i> 100% Sécurisé</span>
+            <span><i class="fas fa-comments"></i> Support 24/7</span>
+            <span><i class="fas fa-globe"></i> Multi-devises</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+      <div class="container">
+        <div class="section-title">
+          <h2>Fonctionnalités Complètes</h2>
+          <p>
+            Découvrez tous les outils conçus pour moderniser votre expérience
+            tontinière
+          </p>
+        </div>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-users"></i>
+            </div>
+            <h3>Gestion Intelligente des Groupes</h3>
+            <p>
+              Créez des groupes illimités, définissez les règles de cotisation
+              et gérez les membres avec une interface intuitive.
+            </p>
+            <ul class="feature-list">
+              <li>
+                <i class="fas fa-check"></i> Création de groupe en 2 minutes
+              </li>
+              <li><i class="fas fa-check"></i> Invitations par SMS/QR code</li>
+              <li>
+                <i class="fas fa-check"></i> Gestion des rôles personnalisée
+              </li>
+            </ul>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-exchange-alt"></i>
+            </div>
+            <h3>Transactions Transparentes</h3>
+            <p>
+              Suivez chaque mouvement financier avec un historique détaillé et
+              vérifiable par tous les membres.
+            </p>
+            <ul class="feature-list">
+              <li>
+                <i class="fas fa-check"></i> Journal complet des transactions
+              </li>
+              <li><i class="fas fa-check"></i> Reçus digitaux automatiques</li>
+              <li>
+                <i class="fas fa-check"></i> Export des données en PDF/Excel
+              </li>
+            </ul>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-hand-holding-usd"></i>
+            </div>
+            <h3>Système de Prêts Avancé</h3>
+            <p>
+              Gérez les demandes de prêts avec processus d'approbation flexible
+              et calcul automatique des intérêts.
+            </p>
+            <ul class="feature-list">
+              <li>
+                <i class="fas fa-check"></i> Approbation par vote ou trésorier
+              </li>
+              <li>
+                <i class="fas fa-check"></i> Calcul automatique des intérêts
+              </li>
+              <li><i class="fas fa-check"></i> Calendrier de remboursement</li>
+            </ul>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-sms"></i>
+            </div>
+            <h3>Notifications Multi-canaux</h3>
+            <p>
+              Notifications push pour les smartphones et SMS pour les membres
+              avec téléphones basiques.
+            </p>
+            <ul class="feature-list">
+              <li><i class="fas fa-check"></i> Alertes en temps réel</li>
+              <li><i class="fas fa-check"></i> Rappels automatiques</li>
+              <li>
+                <i class="fas fa-check"></i> Personnalisation des messages
+              </li>
+            </ul>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <h3>Sécurité Renforcée</h3>
+            <p>
+              Données chiffrées et journal de toutes les activités pour une
+              transparence et sécurité totales.
+            </p>
+            <ul class="feature-list">
+              <li><i class="fas fa-check"></i> Chiffrement de bout en bout</li>
+              <li>
+                <i class="fas fa-check"></i> Authentification à deux facteurs
+              </li>
+              <li><i class="fas fa-check"></i> Sauvegardes automatiques</li>
+            </ul>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-globe-africa"></i>
+            </div>
+            <h3>Multi-devises</h3>
+            <p>
+              Support complet des devises africaines (CDF, XAF, XOF, NGN, etc.)
+              et internationales.
+            </p>
+            <ul class="feature-list">
+              <li><i class="fas fa-check"></i> 15+ devises africaines</li>
+              <li><i class="fas fa-check"></i> Conversion automatique</li>
+              <li><i class="fas fa-check"></i> Historique des taux</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works" id="how-it-works">
+      <div class="container">
+        <div class="section-title">
+          <h2>Comment ça marche</h2>
+          <p>Une plateforme simple, intuitive et accessible à tous</p>
+        </div>
+        <div class="steps">
+          <div class="step">
+            <div class="step-number">1</div>
+            <h3>Créez votre groupe</h3>
+            <p>
+              Inscrivez-vous et créez votre groupe de tontine en quelques
+              minutes. Choisissez le nom, la devise et les règles de
+              fonctionnement.
+            </p>
+          </div>
+          <div class="step">
+            <div class="step-number">2</div>
+            <h3>Invitez les membres</h3>
+            <p>
+              Invitez vos membres par SMS, lien ou QR code. Ils peuvent
+              rejoindre même sans smartphone grâce aux notifications SMS.
+            </p>
+          </div>
+          <div class="step">
+            <div class="step-number">3</div>
+            <h3>Gérez les transactions</h3>
+            <p>
+              Enregistrez les cotisations, décaissements et prêts. Tous les
+              membres sont notifiés en temps réel de chaque opération.
+            </p>
+          </div>
+          <div class="step">
+            <div class="step-number">4</div>
+            <h3>Surveillez et analysez</h3>
+            <p>
+              Consultez les statistiques de votre groupe, exportez les données
+              et assurez une transparence totale pour tous les membres.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+      <div class="container">
+        <div class="section-title">
+          <h2>Ils nous font confiance</h2>
+          <p>
+            Rejoignez des milliers d'utilisateurs satisfaits à travers l'Afrique
+          </p>
+        </div>
+
+        <!-- Stats dans la section témoignages -->
+        <div class="stats-grid">
+          <div class="stat-item">
+            <div class="stat-icon">
+              <i class="fas fa-users"></i>
+            </div>
+            <h3 class="counter" data-target="1500">
+              1500<span class="exposant">+</span>
+            </h3>
+            <p>Utilisateurs Actifs</p>
+          </div>
+          <div class="stat-item">
+            <div class="stat-icon">
+              <i class="fas fa-layer-group"></i>
+            </div>
+            <h3 class="counter" data-target="500">
+              500<span class="exposant">+</span>
+            </h3>
+            <p>Groupes Créés</p>
+          </div>
+          <div class="stat-item">
+            <div class="stat-icon">
+              <i class="fas fa-exchange-alt"></i>
+            </div>
+            <h3 class="counter" data-target="45000">
+              45000<span class="exposant">+</span>
+            </h3>
+            <p>Transactions Sécurisées</p>
+          </div>
+          <div class="stat-item">
+            <div class="stat-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <h3 class="counter" data-target="20">
+              20<span class="exposant">+</span>
+            </h3>
+            <p>Pays Africains</p>
+          </div>
+        </div>
+
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div class="testimonial-image">
+              <img
+                src="https://images.unsplash.com/photo-1551836026-d5c8c5ab235e?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80"
+                alt="Maman Kabasele"
+              />
+            </div>
+            <div class="testimonial-content">
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p>
+                "E-Avec a transformé notre association de femmes. Plus de
+                disputes, plus de cahiers perdus. Tout est transparent et
+                accessible même pour les mamans qui n'ont pas de smartphone."
+              </p>
+            </div>
+            <div class="testimonial-author">
+              <h4>Maman Kabasele</h4>
+              <p>Présidente d'association, Kinshasa</p>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-image">
+              <img
+                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80"
+                alt="Papa Makengo"
+              />
+            </div>
+            <div class="testimonial-content">
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p>
+                "En tant que trésorier, E-Avec m'a libéré de la paperasse. Je
+                peux maintenant me concentrer sur le développement de notre
+                groupe plutôt que sur la gestion fastidieuse des cahiers."
+              </p>
+            </div>
+            <div class="testimonial-author">
+              <h4>Papa Makengo</h4>
+              <p>Trésorier, Lubumbashi</p>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-image">
+              <img
+                src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80"
+                alt="Maman Marie"
+              />
+            </div>
+            <div class="testimonial-content">
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <p>
+                "Même avec mon vieux téléphone, je reçois des SMS pour toutes
+                les activités. Je me sens toujours connectée à mon groupe et je
+                peux vérifier à tout moment l'état de mes cotisations."
+              </p>
+            </div>
+            <div class="testimonial-author">
+              <h4>Maman Marie</h4>
+              <p>Membre, Goma</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+      <div class="container">
+        <div class="section-title">
+          <h2>Questions Fréquentes</h2>
+          <p>Trouvez des réponses à vos questions sur E-Avec</p>
+        </div>
+        <div class="faq-grid">
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>Comment fonctionne E-Avec sans internet ?</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                E-Avec utilise un système hybride : les membres avec smartphone
+                utilisent l'application, ceux sans smartphone reçoivent des
+                notifications par SMS. Le trésorier synchronise les données
+                lorsqu'il a internet.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>Est-ce que E-Avec est sécurisé pour gérer notre argent ?</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Absolument. E-Avec utilise un chiffrement de bout en bout, une
+                authentification à deux facteurs et conserve un journal de
+                toutes les activités. L'application ne gère pas directement les
+                fonds, elle suit seulement les transactions.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>
+                Comment les membres sans smartphone peuvent-ils accéder à leurs
+                informations ?
+              </h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Les membres sans smartphone reçoivent des SMS de confirmation
+                pour chaque transaction. Ils peuvent également demander au
+                trésorier de consulter l'historique du groupe à tout moment.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>Quelles devises sont supportées par E-Avec ?</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                E-Avec supporte toutes les principales devises africaines (CDF,
+                XAF, XOF, NGN, GHS, etc.) ainsi que les devises internationales
+                courantes (USD, EUR). Chaque groupe choisit sa devise
+                principale.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>Comment sont calculés les intérêts sur les prêts ?</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Le système calcule automatiquement les intérêts selon le taux et
+                la durée définis par le groupe. Plusieurs méthodes sont
+                disponibles (simple, composé, etc.) et totalement transparentes
+                pour tous les membres.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>Puis-je exporter les données de mon groupe ?</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Oui, les trésoriers peuvent exporter l'historique complet des
+                transactions au format PDF ou Excel pour la comptabilité ou
+                l'archivage.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="section-title">
+          <h2>Contactez-Nous</h2>
+          <p>Une question ? Notre équipe est là pour vous aider</p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-info">
+            <h3>Informations de contact</h3>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="contact-details">
+                <h4>Adresse</h4>
+                <p>123 Avenue de la Tontine, Kinshasa, RDC</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div class="contact-details">
+                <h4>Téléphone</h4>
+                <p>+243 970 000 000</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="contact-details">
+                <h4>Email</h4>
+                <p>contact@eavec.com</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-clock"></i>
+              </div>
+              <div class="contact-details">
+                <h4>Heures d'ouverture</h4>
+                <p>Lun - Ven: 8h00 - 18h00<br />Sam: 9h00 - 13h00</p>
+              </div>
+            </div>
+          </div>
+          <div class="contact-form">
+            <h3>Envoyez-nous un message</h3>
+            <form id="contactForm">
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="name"
+                  placeholder="Votre nom complet"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="Votre adresse email"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="subject"
+                  placeholder="Sujet du message"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <textarea
+                  id="message"
+                  rows="5"
+                  placeholder="Votre message"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn">Envoyer le message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+      <div class="container">
+        <h2>Prêt à révolutionner votre gestion de tontine ?</h2>
+        <p>
+          Rejoignez la communauté E-Avec et découvrez une nouvelle façon de
+          gérer vos finances communautaires
+        </p>
+        <div class="cta-buttons">
+          <a href="#" class="btn btn-large open-signup"
+            >Créer mon compte gratuit</a
+          >
+        </div>
+        <div class="cta-footer">
+          <p>Support 7j/7</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <h3>E-Avec</h3>
+            <p>
+              La plateforme de gestion de tontines la plus complète pour
+              l'Afrique.
+            </p>
+            <div class="social-links">
+              <a href="#"
+                ><i
+                  class="fab fa-facebook-f"
+                  aria-label="Suivez-nous su Facebook"
+                ></i
+              ></a>
+              <a href="#"
+                ><i
+                  class="fab fa-twitter"
+                  aria-label="Suivez-nous sur Twitter"
+                ></i
+              ></a>
+              <a href="#"
+                ><i
+                  class="fab fa-instagram"
+                  aria-label="Suivez-nous sur Instagram"
+                ></i
+              ></a>
+              <a href="#"
+                ><i
+                  class="fab fa-linkedin-in"
+                  aria-label="Suivez-nous sur Linkedin"
+                ></i
+              ></a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h3>Liens rapides</h3>
+            <ul class="footer-links">
+              <li><a href="#accueil">Accueil</a></li>
+              <li><a href="#features">Fonctionnalités</a></li>
+              <li><a href="#how-it-works">Comment ça marche</a></li>
+              <li><a href="#testimonials">Témoignages</a></li>
+              <li><a href="#faq">FAQ</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>Légal</h3>
+            <ul class="footer-links">
+              <li><a href="#">Conditions d'utilisation</a></li>
+              <li><a href="#">Politique de confidentialité</a></li>
+              <li><a href="#">Mentions légales</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>Contact</h3>
+            <ul class="footer-links">
+              <li><i class="fas fa-envelope"></i> contact@eavec.com</li>
+              <li><i class="fas fa-phone"></i> +243 970 000 000</li>
+              <li><i class="fas fa-map-marker-alt"></i> Kinshasa, RDC</li>
+              <li><i class="fas fa-clock"></i> Lun-Ven: 8h-18h</li>
+            </ul>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>&copy; 2025 E-Avec. Tous droits réservés.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Boutons de navigation -->
+    <div class="scroll-buttons">
+      <button class="scroll-to-top" aria-label="Monter" id="scrollToTop">
+        <i class="fas fa-arrow-up"></i>
+      </button>
+      <button
+        class="scroll-to-bottom"
+        aria-label="Descender"
+        id="scrollToBottom"
+      >
+        <i class="fas fa-arrow-down"></i>
+      </button>
+    </div>
+
+    <!-- Modal d'inscription -->
+    <div class="modal" id="signupModal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>Créer un compte E-Avec</h2>
+          <button class="close-modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <form id="signupForm">
+            <div class="form-group">
+              <label for="signup-name">Nom complet</label>
+              <input type="text" id="signup-name" required />
+            </div>
+            <div class="form-group">
+              <label for="signup-email">Adresse email</label>
+              <input type="email" id="signup-email" required />
+            </div>
+            <div class="form-group">
+              <label for="signup-phone">Numéro de téléphone</label>
+              <input type="tel" id="signup-phone" required />
+            </div>
+            <div class="form-group">
+              <label for="signup-password">Mot de passe</label>
+              <input type="password" id="signup-password" required />
+            </div>
+            <div class="form-group">
+              <label for="signup-confirm">Confirmer le mot de passe</label>
+              <input type="password" id="signup-confirm" required />
+            </div>
+            <div class="form-group checkbox-group">
+              <input type="checkbox" id="signup-terms" required />
+              <label for="signup-terms"
+                >J'accepte les <a href="#">conditions d'utilisation</a> et la
+                <a href="#">politique de confidentialité</a></label
+              >
+            </div>
+            <button type="submit" class="btn btn-large">
+              Créer mon compte
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <!-- Scripts JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="scripts/main.js"></script>
+    <!-- script personnalisé -->
+  </body>
+</html>
