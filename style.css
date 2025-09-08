@@ -106,6 +106,12 @@ nav {
 .nav-links a:hover {
   color: var(--primary);
 }
+.btn.open-signup:hover {
+  background-color: var(--secondary); /* ✅ nouvelle couleur de fond */
+  color: white; /* ✅ couleur du texte */
+  box-shadow: 0 6px 20px rgba(16, 185, 129, 0.3); /* ✅ effet visuel */
+  transform: translateY(-2px); /* ✅ petit effet de rebond */
+}
 
 /* Mobile Menu */
 .menu-toggle {
@@ -217,7 +223,7 @@ nav {
   border-radius: 25px;
   font-size: 0.9rem;
   font-weight: 500;
-  color: var(--secondary-dark);
+  color: var(--primary);
   flex-direction: 2 column;
 }
 
@@ -1199,6 +1205,8 @@ footer {
 /*Responsive Menu */
 @media (max-width: 768px) {
   .nav-links {
+    align-items: flex-start; /* ✅ aligne les éléments à gauche */
+    text-align: left; /* ✅ aligne le texte à gauche */
     background: rgba(255, 255, 255, 0.95);
     width: 60%; /* ✅ moitié de l’écran */
     height: 100vh;
@@ -1215,11 +1223,6 @@ footer {
     animation: fadeInUp 1s ease 0.2s;
     animation-fill-mode: both;
   }
-
-  .nav-links {
-    align-items: flex-start; /* ✅ aligne les éléments à gauche */
-    text-align: left; /* ✅ aligne le texte à gauche */
-  }
   .nav-links a {
     text-decoration: none; /* ✅ supprime le soulignement */
     font-size: 1rem;
@@ -1232,9 +1235,23 @@ footer {
     width: 100%; /* ✅ chaque lien prend toute la largeur */
   }
   .btn.open-signup {
-    align-self: stretch;
+    align-self: auto;
     justify-content: center;
     text-align: center;
-    align-items: center;
+    transition: all 0.5s ease;
+  }
+  .nav-links li:last-child {
+    width: 100%;
+    padding: 10px 0;
+  }
+  .nav-links .btn.open-signup {
+    display: block;
+    width: calc(100% - 30px); /* ✅ laisse 15px de chaque côté */
+    margin: 0 auto; /* ✅ centre horizontalement */
+    padding: 12px 20px; /* ✅ espace intérieur confortable */
+    text-align: center;
+  }
+  .nav-links.active {
+    transform: translateX(0);
   }
 }
