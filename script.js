@@ -3,7 +3,6 @@
 // Menu mobile
 const mobileMenu = document.getElementById("mobile-menu");
 const navLinks = document.getElementById("nav-links");
-
 mobileMenu.addEventListener("click", () => {
   navLinks.classList.toggle("active");
   mobileMenu.classList.toggle("active");
@@ -92,6 +91,29 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
         navLinks.classList.remove("active");
         mobileMenu.classList.remove("active");
       }
+    }
+  });
+});
+
+// Gestion de lien actif
+const sections = document.querySelectorAll("section");
+const navItems = document.querySelectorAll(".nav-links a");
+const headerHeight = document.querySelector("header").offsetHeight;
+
+window.addEventListener("scroll", () => {
+  let current = "";
+
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop - headerHeight - 10; // ✅ décalage corrigé
+    if (window.scrollY >= sectionTop) {
+      current = section.getAttribute("id");
+    }
+  });
+
+  navItems.forEach((link) => {
+    link.classList.remove("active-link");
+    if (link.getAttribute("href").includes(current)) {
+      link.classList.add("active-link");
     }
   });
 });

@@ -28,9 +28,9 @@ body {
 }
 
 .container {
-  max-width: 1300px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 15px;
+  padding: 10px;
 }
 
 /* Header & Navigation */
@@ -38,7 +38,7 @@ header {
   background: rgba(255, 255, 255, 0.95);
   -webkit-backdrop-filter: blur(10px); /* ✅ pour Safari */
   backdrop-filter: blur(10px);
-  background-color: rgba(255, 255, 255, 0.8); /* ✅ transparence obligatoire */
+  background-color: rgb(255, 255, 255); /* ✅ transparence obligatoire */
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
   position: fixed;
   width: 100%;
@@ -50,7 +50,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 0;
+  padding: 7px 0;
 }
 
 .logo {
@@ -72,6 +72,35 @@ nav {
   font-weight: 500;
   transition: color 0.3s ease;
   text-decoration: none;
+}
+
+/*lien active */
+.nav-links a.active-link {
+  background-color: var(--gray-light);
+  border-left: 4px solid var(--primary);
+  padding-left: 12px;
+  font-weight: 600;
+}
+
+.nav-links li {
+  opacity: 0;
+  transform: translateX(20px);
+  animation: slideIn 0.4s ease forwards;
+}
+
+.nav-links li:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.nav-links li:nth-child(2) {
+  animation-delay: 0.2s;
+}
+/* etc. */
+
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .nav-links a:hover {
@@ -97,7 +126,7 @@ nav {
 /* Buttons */
 .btn {
   display: inline-flex;
-  align-items: center;
+  align-items: start;
   gap: 8px;
   padding: 12px 30px;
   background: var(--primary);
@@ -157,7 +186,7 @@ nav {
 
 .hero p {
   font-size: 1.2rem;
-  color: var(--gray-light);
+  color: var(--dark);
   margin-bottom: 30px;
   animation: fadeInUp 1s ease 0.2s;
   animation-fill-mode: both;
@@ -170,13 +199,13 @@ nav {
   animation: fadeInUp 1s ease 0.4s;
   animation-fill-mode: both;
 }
-
 .hero-badges {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
   animation: fadeInUp 1s ease 0.6s;
   animation-fill-mode: both;
+  flex-direction: 2 column;
 }
 
 .hero-badges span {
@@ -184,10 +213,12 @@ nav {
   align-items: center;
   gap: 8px;
   padding: 8px 16px;
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(20, 4, 247, 0.151);
   border-radius: 25px;
   font-size: 0.9rem;
   font-weight: 500;
+  color: var(--secondary-dark);
+  flex-direction: 2 column;
 }
 
 .hero-image {
@@ -1168,15 +1199,42 @@ footer {
 /*Responsive Menu */
 @media (max-width: 768px) {
   .nav-links {
+    background: rgba(255, 255, 255, 0.95);
+    width: 60%; /* ✅ moitié de l’écran */
+    height: 100vh;
     margin: 0 auto;
-    text-align: left;
-    background: white;
+    background-color: rgb(255, 255, 255);
     flex-direction: column;
-    align-items: flex-start;
-    gap: 0.05px; /* ✅ espace réduit */
+    gap: 0px; /* ✅ espace réduit */
+    z-index: 999;
+  }
+  .hero p {
+    font-size: 1.2rem;
+    color: var(--gray-light);
+    margin-bottom: 30px;
+    animation: fadeInUp 1s ease 0.2s;
+    animation-fill-mode: both;
+  }
+
+  .nav-links {
+    align-items: flex-start; /* ✅ aligne les éléments à gauche */
+    text-align: left; /* ✅ aligne le texte à gauche */
+  }
+  .nav-links a {
+    text-decoration: none; /* ✅ supprime le soulignement */
+    font-size: 1rem;
+    display: block;
+    width: 100%;
+    padding-left: 20px; /* ✅ petit retrait à gauche */
+    text-align: left;
+  }
+  .nav-links li {
+    width: 100%; /* ✅ chaque lien prend toute la largeur */
   }
   .btn.open-signup {
     align-self: stretch;
     justify-content: center;
+    text-align: center;
+    align-items: center;
   }
 }
